@@ -82,7 +82,7 @@ void uart_task(void *p) {
             int val = data.val;
             
             int msb = val >> 8;
-            int lsb = val & 0xFF ;
+            int lsb = val & 0xFF;
 
             uart_putc_raw(uart0, data.axis); 
             uart_putc_raw(uart0, lsb);
